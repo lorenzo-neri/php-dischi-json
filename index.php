@@ -30,7 +30,7 @@ include __DIR__ . '/assets/layout/head.php'
         <div class="container">
             <div class="row">
                 <div v-for="(disk, index) in disks" :key="disk + index" class="col-4">
-                    <div class="card py-4 px-5 m-4 text-white">
+                    <div @click="show_disk" class="card py-4 px-5 m-4 text-white">
                         <img :src="disk.poster" class="card-img-top" :alt="disk.title">
                         <div class="card-body text-center">
                             <h3 class="card-title">{{disk.title}}</h3>

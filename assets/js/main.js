@@ -8,7 +8,9 @@ createApp({
     },
 
     methods: {
-
+        showDisk() {
+            console.log('click');
+        }
     },
     mounted() {
         axios
