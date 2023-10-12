@@ -16,6 +16,7 @@ createApp({
             .then(response => {
                 console.log(response);
                 this.disks = response.data
+                console.log(response.data);
             })
     }
 }).mount('#app')
