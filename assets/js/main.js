@@ -3,6 +3,7 @@ createApp({
     data() {
         return {
             title: 'Hello Vue',
+            disks: null,
         }
     },
 
@@ -10,6 +11,11 @@ createApp({
 
     },
     mounted() {
-
+        axios
+            .get('server.php')
+            .then(response => {
+                console.log(response);
+                this.disks = response.data
+            })
     }
 }).mount('#app')
