@@ -25,8 +25,13 @@ include __DIR__ . '/assets/layout/head.php'
     <h1>{{title}}</h1>
 
     <ul>
-        <li v-for="(disk, index) in disks">
-
+        <li v-for="(disk, index) in disks" :key="disk + index">
+            {{disk.title}}
+            <ul>
+                <li>{{disk.author}}</li>
+                <li>{{disk.year}}</li>
+                <li>{{disk.genre}}</li>
+            </ul>
         </li>
     </ul>
 

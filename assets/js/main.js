@@ -2,7 +2,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            title: 'Hello Vue',
+            title: 'Spotify Disks',
             disks: null,
         }
     },
